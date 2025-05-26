@@ -4,7 +4,7 @@ services:
   backend:
     build:
       context: .
-      dockerfile: D:\Python_ML\Artizence_Task\V2\resume_evaluator\backend\DockerFile
+      dockerfile: ./backend/DockerFile
     container_name: resume_backend
     ports:
       - "8000:8000"
@@ -16,7 +16,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: D:\Python_ML\Artizence_Task\V2\resume_evaluator\frontend\DockerFile
+      dockerfile: ./frontend/DockerFile
     container_name: resume_frontend
     ports:
       - "8501:8501"
